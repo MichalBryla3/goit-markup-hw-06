@@ -495,9 +495,69 @@ body {
   display: block;
   width: 300px;
   margin-left: 215px;
-  margin: 60px 0px 0px 490px;
+  margin: 60px 0px 0px 383px;
 }
 
+.newsletter {
+  margin-left: 78px;
+  margin: 0px 0px 20px 78px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-footer-newsletter {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: white;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: hidden;
+  fill: white;
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+.button-footer-newsletter:hover,
+.button-footer-newsletter:active,
+.button-footer-newsletter:focus {
+  background-color: white;
+  color: #2196f3;
+  fill: #2196f3;
+  transition: transform 250ms var(--transition);
+}
+
+.newsletter-text {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 0px 0px 20px 0px;
+}
+.newsletter-mail-place {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: rgba(47, 48, 58, 1);
+  color: white;
+}
+
+.icon-send-size {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  margin-left: 24px;
+}
 /* backdrop */
 
 .backdrop {
