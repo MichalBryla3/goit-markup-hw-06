@@ -585,9 +585,10 @@
           </li>
         </ul>
       </div>
+
       <form class="newsletter">
-        <label
-          ><p class="newsletter-text">Zapisz się do newslettera</p>
+        <label>
+          <p class="newsletter-text">Zapisz się do newslettera</p>
           <input
             class="newsletter-mail-place"
             type="email"
@@ -622,44 +623,50 @@
 
         <form class="form">
           <p>Zostaw swoje dane w formularzu poniżej</p>
-          <label
-            >Imię<input
-              class="label-text"
-              type="text"
-              name="name"
-              placeholder=""
+          <label>
+            Imię<svg class="form-icons1" id="icon-user">
+              <use
+                xlink:href="./images/icons.svg#icon-user"
+                width="12px"
+                height="12px"
+              ></use></svg
+            ><input class="label-text" type="text" name="name" placeholder=""
           /></label>
           <label
-            >Telefon<input
-              class="label-text"
-              type="text"
-              name="name"
-              placeholder=""
+            >Telefon<svg class="form-icons2" id="icon-phone">
+              <use
+                xlink:href="./images/icons.svg#icon-phone"
+                width="13px"
+                height="13px"
+              ></use></svg
+            ><input class="label-text" type="text" name="name" placeholder=""
           /></label>
           <label
-            >Email<input
-              class="label-text"
-              type="text"
-              name="name"
-              placeholder=""
+            >Email<svg class="form-icons3" id="icon-envelope-fill">
+              <use
+                xlink:href="./images/icons.svg#icon-envelope-fill"
+                width="15px"
+                height="12px"
+              ></use></svg
+            ><input class="label-text" type="text"
           /></label>
           <label
             >Komentarz<textarea
-              class="label-text"
+              class="label-text textarea"
               name="feedback"
               rows="5"
               placeholder="Wprowadź tekst"
             ></textarea>
           </label>
           <label class="checkbox-text"
-            ><input
-              class="checkbox-check-button"
-              type="checkbox"
-              name=""
-              value=""
-            />Oświadczam iż akceptuję <span class="">Regulamin</span> i
-            <span>Politykę Prywatności.</span></label
-          >
+            ><input type="checkbox" /><span
+              >Oświadczam iż akceptuje
+              <a href="#" class="link-privacy-policy">Regulamin</a> i
+              <a href="#" class="link-privacy-policy">Politykę Prywatności.</a>
+            </span></label
+          ><label class="button-form-send">
+            <button type="submit">Wyślij</button>
+          </label>
         </form>
       </div>
     </div>
