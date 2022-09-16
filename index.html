@@ -622,33 +622,43 @@
         </button>
 
         <form class="form">
-          <p>Zostaw swoje dane w formularzu poniżej</p>
-          <label>
+          <h4>Zostaw swoje dane w formularzu poniżej</h4>
+          <label for="name">
             Imię<svg class="form-icons1" id="icon-user">
               <use
                 xlink:href="./images/icons.svg#icon-user"
                 width="12px"
                 height="12px"
               ></use></svg
-            ><input class="label-text" type="text" name="name" placeholder=""
+            ><input
+              class="label-text"
+              type="text"
+              name="name"
+              placeholder=""
+              required
           /></label>
-          <label
+          <label for="phone"
             >Telefon<svg class="form-icons2" id="icon-phone">
               <use
                 xlink:href="./images/icons.svg#icon-phone"
                 width="13px"
                 height="13px"
               ></use></svg
-            ><input class="label-text" type="text" name="name" placeholder=""
+            ><input
+              class="label-text"
+              type="text"
+              name="name"
+              placeholder=""
+              required
           /></label>
-          <label
+          <label for="user_email"
             >Email<svg class="form-icons3" id="icon-envelope-fill">
               <use
                 xlink:href="./images/icons.svg#icon-envelope-fill"
                 width="15px"
                 height="12px"
               ></use></svg
-            ><input class="label-text" type="text"
+            ><input class="label-text" type="text" required
           /></label>
           <label
             >Komentarz<textarea
@@ -656,10 +666,11 @@
               name="feedback"
               rows="5"
               placeholder="Wprowadź tekst"
+              name="textarea"
             ></textarea>
           </label>
           <label class="checkbox-text"
-            ><input type="checkbox" /><span
+            ><input class="checked-or-not" type="checkbox" name="privacy-policy" /><span
               >Oświadczam iż akceptuje
               <a href="#" class="link-privacy-policy">Regulamin</a> i
               <a href="#" class="link-privacy-policy">Politykę Prywatności.</a>

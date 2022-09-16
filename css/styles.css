@@ -626,7 +626,7 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
 }
-.form > p {
+.form > h4 {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -639,10 +639,34 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+  padding-left: 42px;
 }
+
+.form input:active,
+.form input:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  outline: none;
+  transition: transform 250ms var(--transition);
+}
+
+.textarea:active,
+.textarea:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  outline: none;
+  transition: transform 250ms var(--transition);
+}
+.form label:focus-within,
+.modal_comm:focus-within {
+  fill: #2196f3;
+  transition: transform 250ms var(--transition);
+}
+
 .textarea {
   height: 120px;
   resize: none;
+  padding: 12px 0px 0px 16px;
 }
 
 .checkbox-text {
@@ -659,6 +683,11 @@ body {
 .checkbox-text span {
   margin-left: 20px;
 }
+
+.checked-or-not:checked {
+  background-image: url("./images/icons.svg#icon-icon-check");
+}
+
 .button-form-send button {
   width: 200px;
   height: 50px;
@@ -681,10 +710,12 @@ body {
   transition: 0.3s;
   background-color: var(--grey);
   transform: scale(1.05) translateY(0.125rem);
+  transition: transform 250ms var(--transition);
 }
 
 .form-icons1 {
   position: absolute;
+
   left: 57px;
   top: 98px;
   height: 11px;
@@ -703,7 +734,4 @@ body {
   top: 225px;
   height: 15px;
   width: 12px;
-}
-.form > label:hover {
-  border-color: red;
 }
