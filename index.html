@@ -669,17 +669,19 @@
               name="textarea"
             ></textarea>
           </label>
+
           <div>
-            <input
-              class="modal-form-policy"
-              type="checkbox"
-              name="user-policy"
-            />
-            <label for="user-policy" class="checkbox-text"
-              >Oświadczam iż akceptuje
-              <a href="#" class="link-privacy-policy">Regulamin</a> i
-              <a href="#" class="link-privacy-policy">Politykę Prywatności.</a>
-            </label>
+            <label
+              ><input
+                type="checkbox"
+                name="policy"
+                class="modal-form-policy visually-hidden"
+              />
+              <span class="modal-form-policy-text">
+                Oświadczam iż akceptuje <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności.</a>
+              </span></label
+            >
           </div>
 
           <label class="button-form-send">

@@ -669,18 +669,41 @@ body {
   padding: 12px 0px 0px 16px;
 }
 
-.checkbox-text::before {
-  display: block;
+.modal-form-policy-text::before {
+  display: inline-block;
   content: "";
-  height: 16px;
   width: 16px;
-  border: 1px solid black;
+  height: 16px;
+  outline: 1px solid #000;
+  border-radius: 2px;
 }
 
-.modal-form-policy:checked + .checkbox-text::before {
-  background-color: red;
-  border: none;
-  background-image: url("..images/Vector.svg");
+.modal-form-policy:checked + .modal-form-policy-text::before {
+  background-color: rgba(33, 150, 243, 1);
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.modal-form-policy-text a {
+  color: rgba(33, 150, 243, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 /* .checkbox-text {
